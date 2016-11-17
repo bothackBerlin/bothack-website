@@ -8882,6 +8882,28 @@ sup.dollar {
   font-size: 88px;
   margin-top: 40px;
 }
+.pricing-headingm {
+  background-color: #ffd706;
+}
+.text-tlgg {
+  color: #ffd706;
+}
+.header-item {
+  display: inline-block;
+  margin: 20px auto;
+}
+.header-item.circular {
+  border-radius: 50%;
+}
+.header-item img {
+  padding: 22px 30px;
+}
+.text-grey {
+  color: #f5f2f2;
+}
+.bg-master-tlgg {
+  background-color: #ffd706;
+}
 .fghi {
   color: white !important;
 }

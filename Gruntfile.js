@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(grunt) { 
+module.exports = function(grunt) {
 grunt.loadNpmTasks('grunt-contrib-less');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-copy');
@@ -26,7 +26,7 @@ less: {
 },
 copy: {
   main: {
-    src: ['**/*',  '!**/node_modules/**','!.gitgnore','!package.json','!Gruntfile.js','!gulpfile.js'],
+    src: ['**/*',  '!**/node_modules/**','!.gitgnore','!package.json','!Gruntfile.js','!gulpfile.js','!README.md'],
     expand: true,
     cwd: '',
     dest: 'dist',
@@ -62,8 +62,8 @@ uglify: {
 });
 
 grunt.registerTask(
-  'build', 
-  'Compiles all of the assets and copies the files to the build directory.', 
+  'build',
+  'Compiles all of the assets and copies the files to the build directory.',
   ['copy','cssmin','uglify']
 );
 
